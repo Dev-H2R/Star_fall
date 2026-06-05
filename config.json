@@ -1,0 +1,81 @@
+{
+  "game": {
+    "title": "STARFALL",
+    "version": "1.0.0",
+    "canvas": { "width": 560, "height": 500 },
+    "lives": 3,
+    "combo_threshold": 3
+  },
+  "bucket": {
+    "width": 72,
+    "height": 34,
+    "speed": 7,
+    "smoothing": 0.2
+  },
+  "levels": [
+    { "level": 1, "score_threshold": 0,   "spawn_rate": 85, "base_speed": 3.5, "label": "STARGAZER"   },
+    { "level": 2, "score_threshold": 120, "spawn_rate": 72, "base_speed": 4.2, "label": "ASTRONOMER"  },
+    { "level": 3, "score_threshold": 280, "spawn_rate": 60, "base_speed": 5.0, "label": "NAVIGATOR"   },
+    { "level": 4, "score_threshold": 500, "spawn_rate": 48, "base_speed": 6.0, "label": "COSMONAUT"   },
+    { "level": 5, "score_threshold": 800, "spawn_rate": 36, "base_speed": 7.2, "label": "WARP PILOT"  }
+  ],
+  "drop_types": [
+    {
+      "id": "star",
+      "label": "★",
+      "color": "#FFD700",
+      "glow": "rgba(255,215,0,0.7)",
+      "points": 10,
+      "radius": 14,
+      "weight": 55,
+      "special": false,
+      "description": "Golden Star — the most common drop"
+    },
+    {
+      "id": "moon",
+      "label": "☽",
+      "color": "#c8d8ff",
+      "glow": "rgba(200,216,255,0.6)",
+      "points": 25,
+      "radius": 13,
+      "weight": 25,
+      "special": false,
+      "description": "Crescent Moon — worth more than a star"
+    },
+    {
+      "id": "comet",
+      "label": "☄",
+      "color": "#ff9f43",
+      "glow": "rgba(255,159,67,0.7)",
+      "points": 50,
+      "radius": 12,
+      "weight": 10,
+      "special": "rare",
+      "description": "Comet — rare, high value"
+    },
+    {
+      "id": "blackhole",
+      "label": "◉",
+      "color": "#ff4f7b",
+      "glow": "rgba(255,79,123,0.7)",
+      "points": -1,
+      "radius": 13,
+      "weight": 10,
+      "special": "bad",
+      "description": "Black Hole — avoid at all costs!"
+    }
+  ],
+  "scoring": {
+    "combo_multipliers": [
+      { "min_combo": 1,  "multiplier": 1 },
+      { "min_combo": 3,  "multiplier": 2 },
+      { "min_combo": 5,  "multiplier": 3 },
+      { "min_combo": 10, "multiplier": 5 }
+    ]
+  },
+  "background_stars": {
+    "count": 180,
+    "twinkle_speed": 0.02,
+    "layers": 3
+  }
+}

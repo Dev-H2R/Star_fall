@@ -1,0 +1,13 @@
+{
+  "leaderboard": [
+    {
+      "name": "TEST",
+      "score": 420,
+      "level": 3,
+      "stars_caught": 38,
+      "date": "2026-06-03"
+    }
+  ],
+  "total_games_played": 1,
+  "total_stars_caught": 38
+}
