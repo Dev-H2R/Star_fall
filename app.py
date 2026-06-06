@@ -16,10 +16,10 @@ from flask import Flask, jsonify, request, send_from_directory
 # ── App setup ──────────────────────────────────────────────────────────────
 app = Flask(__name__, static_folder="static")
 
+
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR  = os.path.join(BASE_DIR, "data")
-CONFIG_FILE      = os.path.join(DATA_DIR, "config.json")
-LEADERBOARD_FILE = os.path.join(DATA_DIR, "leaderboard.json")
+CONFIG_FILE      = os.path.join(BASE_DIR, "config.json")
+LEADERBOARD_FILE = os.path.join(BASE_DIR, "leaderboard.json")
 
 
 # ── Helper: load / save JSON ───────────────────────────────────────────────
